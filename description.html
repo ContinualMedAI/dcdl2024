@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title>DAICOW</title>
+		<title>DCDL</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -36,34 +36,30 @@
 
 									<h2>Motivation and aim</h2>
 
-									<p>Many state-of-the-art methods for medical imaging rely on deep learning models that are susceptible to <b>distribution shifts</b>. Several factors cause changes in data acquisition, including ever-evolving scanning technologies and the presence of image artefacts. Likewise, naturally occurring shifts in disease expression and spread can cause the annotated training base to become outdated. As a result, deep learning models <b>deteriorate over time</b> until they are no longer helpful to the clinician.</p>
-									
-									<p>To maintain the expected performance, models <b>must be updated</b> to incorporate new data patterns while preserving their proficiency in the original evaluation set. We refer to this as <i>lifelong</i> or <i>continual learning</i>. While such a workflow may seem reasonable, <b>actually building, approving and deploying</b> medical lifelong learning solutions faces several challenges.</p>
-									
-									<p>Our aim with this tutorial is to give participants hands-on insights into how various domain shifts affect the performance of deep learning models in dynamic environments; and help them develop strategies to address these issues and correctly monitor performance. We hereby seek to <b>breach the gap</b> in the MICCAI community between technical research on continual learning and <b>the reality of deploying lifelong learning software in clinics. </b></p>
+									<p>Machine Learning (ML) models, despite their prowess, often encounter challenges when deployed in the real world. Model failure cases are especially consequential in high-stakes domains like healthcare. While it is well-known that the quality of data used to train Machine Learning models is crucial to their success or failure, it is often undervalued. The richness and diversity of the training set become particularly important in dynamic scenarios, where the data distribution shifts as time goes on. When this happens, models must incorporate new developments without forgetting previous knowledge. The emergence of Data-Centric AI gives the data used in AI/ML and its quality center stage and seeks to develop tools for systematic characterization, evaluation, and monitoring of the data used to train and evaluate ML models.</p>
 									
 									<hr class="major" />
 									<h2>Learning objectives</h2>
 									
-									<p>We will take a holistic look at the process of developing and releasing lifelong learning solutions, addressing the following topics:</p>
+									<p>We will address the following topics:</p>
 									
 									<ul>
-									<li><b>Data drift in medical imaging:</b> Common sources of domain shift and their effect on model performance</li>
-									<li><b>Dynamic evaluation and monitoring:</b> Metrics for quantifying the performance of lifelong learning models, such as backward and forward transfer, model capacity and computational efficiency; and how to select appropriate test set(s).</li>
-									<li><b>Continual learning strategies:</b> State-of-the-art methods and how to select the appropriate strategy considering performance, flexibility and resource use.</li>
-									<li><b>Current regulations</b> for updating models in different global regions.</li>
+									<li>Motivate and introduce <b>Data-centric AI</b>, a topic of emerging importance for AI.</li>
+									<li>Familiarize attendees with the challenges that we encounter when <b>deploying ML models in dynamic, changing, scenarios</b>; and present solutions from the field of <b>federated and continual learning</b>.</li>
+									<li>Increase <b>hands-on practical coding experience</b> via demonstrations with recent Data-centric and Continual AI tools/methods.</li>
 									</ul>
+
+									By the end of this tutorial, participants will have a comprehensive understanding of the key concepts in Data-Centric and Dynamic AI, and be equipped with knowledge of state-of-the-art tools and what lies ahead. Examples will focus on the healthcare context given the presenters' expertise and MICCAI’s focus. Importantly, the coding demos will provide participants with hands-on experience.
+
 									
 									<hr class="major" />
 									<h2>Schedule</h2>
-									
+
+									<p>The tutorial will consist of two parts. The first half of the tutorial will provide participants with a comprehensive introduction to recent advances in <b>Data-Centric AI</b> with a focus on medical imaging and unique challenges in healthcare. We will frame the data-centric lens in terms of (i) model performance and robustness and (ii) bias and fairness. The tutorial will show applicability to the entire ML pipeline, providing practical use-cases on medical imaging. This end-to-end approach will enable participants to practically engage with Data-Centric AI for their own problems -  from a researcher and practitioner perspective.</p>
+									<p>The second part of the tutorial will focus on adapting the learning process to the <b>ever-changing world</b>. Medical data is - rightly - subjected to spatial and temporal availability constraints designed to protect patient privacy. <b>Federated learning</b> handles spatial restrictions by training models in a distributed fashion, so samples never need to leave their place of acquisition. <b>Continual learning</b> addresses the situation where data collected at a later time point comprises new acquisition conditions or demographics. We will introduce methods from federated and continual learning and explore the challenges associated with actually building, approving, and deploying medical dynamic learning solutions.</p>
+									<p>In both parts, the tutorial will contain <b>hands-on sessions:</b> We will link each tutorial component with practical case studies including coding demonstrations and software tools. This will ensure an immersive learning experience for our participants.</b>
 									<p>We will explore our learning objectives with expert presentations and in a practical setting. Participants will be divided into small groups. Each group will be assigned a medical imaging task, such as lung nodule detection or cardiac MR segmentation, alongside an existing architecture that achieves good performance in a static setting.</p>
-									
-									<p>The tutorial will take you through the development of a continual learning product for the given task through three stages:</p>
-									<ol>
-									<li>Identifying relevant domain shifts,</li>
-									<li> adapting deep learning models for continual learning, and </li>
-									<li> preparing a product release considering regulations and lifecycle monitoring.</li>
+
 									</ol>
 									
 								</section>
@@ -94,7 +90,6 @@
 									<li><a href="index.html#orga">Organization</a></li>
 									<li><a href="description.html">The tutorial</a></li>
 									<li><a href="instructions.html">Taking part</a></li>
-									<li><a href="materials.html">Materials</a></li>
 									<!-- <li>
 										<span class="opener">Submenu</span>
 										<ul>
@@ -114,17 +109,17 @@
 								<header class="major">
 									<h2>Contact</h2>
 								</header>
-								<p>Please reach out through the following channels, or send us a Twitter PM.</p>
+								<p>Please reach out through the following channels, or send us a <a href="https://twitter.com/ContinualMedAI">Twitter PM</a>.</p>
 								<ul class="contact">
 									<li class="icon solid fa-envelope">camilagonzalez@continualai.org</a></li>
 									<!-- <li class="icon solid fa-phone">(+49)  </li> -->
-									<li class="icon solid fa-home">Vancouver Convention Centre </br>East Building Level 1, Meeting Room 2</li>
+									<li class="icon solid fa-home">Palmeraie Conference Centre </br>Marrakesh</li>
 								</ul>
 							</section>
 
 						<!-- Footer -->
 							<footer id="footer">
-								<p class="copyright">&copy; MICCAI DAICOW 2023. All rights reserved. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+								<p class="copyright">&copy; MICCAI DCDL 2024. All rights reserved. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
 							</footer>
 
 					</div>
